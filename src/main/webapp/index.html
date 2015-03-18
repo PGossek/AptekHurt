@@ -4,10 +4,15 @@
                 <meta charset="utf-8">
 		<title>Hello AngularJS</title>
 		<script src="js/libs/angular/angular.js"></script>
-<!--                <script src="js/app/services/hello.js"></script>-->
+                <script src="js/app/services/hello.js"></script>
 	</head>
 
-	<body>
-		  <p>Nothing here {{'yet' + '!'}}</p>
+        <body>
+            <div ng-controller="Hello">
+		  <p>id: {{greeting.id}}</p>
+                  <p>content: {{greeting.content}}</p>
+            </div>
+            
+            <script src="bower_components/angular-resource/angular-resource.js"></script>
 	</body>
 </html>
